@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root{
+--Very_dark_blue: hsl(233, 47%, 7%);
+--Dark_desaturated: hsl(244, 38%, 16%);
+--Soft_violet: hsl(277, 64%, 61%);
+
+--White: hsl(0, 0%, 100%);
+--Slightly_transparent_white: hsla(0, 0%, 100%, 0.75);
+--Slightly_transparent_white_s: hsla(0, 0%, 100%, 0.6);
+--Layer: rgba(110,30,160,0.7)
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Lexend Deca", system-ui;
+    font-size: 15px;
+    background-color: var(--Very_dark_blue);
+}
+main{
+    height: 782px;
+    width: 328px;
+    background-color: var(--Dark_desaturated);
+    margin: 88px auto;
+    border-radius: 5px;
+}
+/* ---------SECTION1--------------- */
+.image{
+    background-image: url(/images/image-header-mobile.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+#layer{
+    background-color: var(--Layer);
+    height: 100%;
+    width: 100%;
+}
+/* -----------SECTION2------------ */
+.section2{
+    padding: 40px 33px;
+    text-align: center;
+
+}
+h1{
+    color: var(--White);
+    font-size: 1.8em;
+    font-family: "Inter", sans-serif;
+    height: 115px;
+}
+span{
+    color: var(--Soft_violet);
+}
+p{
+    color: var(--Slightly_transparent_white);
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+    line-height: 25px;
+    height: 137px;
+}
+.stats{
+    color: var(--Slightly_transparent_white_s);
+    line-height: 25px;
+}
+.amount{
+    font-weight: 700;
+    font-size: 1.45em;
+    color: var(--White);
+}
+.concept{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-bottom: 33px;
+}
+
+.last{
+    text-transform: uppercase;
+
+}
+
+/* -----FOOTER--------- */
+.attribution {
+ font-size: 11px;
+ text-align: center;
+ margin-bottom: 80px; 
+ color: white;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* ***********DESKTOP******************** */
+
+@media only screen and (min-width:1284px){
+    main{
+        width: 1100px;
+        height: 448px;
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 178px auto;
+    }
+    .image{
+        width: 540px;
+        height: 100%;
+        background-image: url(/images/image-header-desktop.jpg);
+    }
+    .section2{
+        padding: 75px 70px;
+        text-align: left;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    p{
+        margin-right: 70px;
+    }
+    .stats{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 70px;
+    }
+  
+}
+
+
